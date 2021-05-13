@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<title>WAKENWORK.COM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">wakenwork</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Về chúng tôi</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Đội ngũ</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Công việc</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Gói tập</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Liên lạc</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Đóng ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Về chúng tôi</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Đội ngũ</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Công việc</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Gói tập</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Liên lạc</a>
+</nav>
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+
+    <p><a href="#courses" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Hãy tập luyện ngay từ hôm nay!</a></p>
+    <p><a href="#courses" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-on" style="margin-left: 150px">Làm cái gì đó có ý nghĩa!</a></p>
+    <p><a href="#courses" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-on" style="margin-left: 200px">Hãy bắt tay vào công việc nào!</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-black w3-light-grey w3-large w3-hover-shadow" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Thông tin về công ty</h3>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Đa năng</p>
+      <p>Website hỗ trợ đa nền tảng, bạn có thể truy cập mọi nơi trên mọi thiết bị !</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Đam mê</p>
+      <p>Đội ngũ thiết kế nhiệt huyết, có đam mê lớn với luyện tập thể dục, thể thao !</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Xác thực</p>
+      <p>Thông tin trên website được kiểm chứng, xác thực trước khi đăng tải !</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Hỗ trợ</p>
+      <p>Đội ngũ nhân viên phục vụ, tận tình giải đáp mọi thắc mắc liên quan đến sức khỏe, khóa tập !</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Phần này dùng để hiển thị slide show</h3>
+      <p>Bạn chán nản khi luyện tập ? Không có động lực lên phòng tập ?</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Lên lịch ngay</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">Lãnh đạo của công ty</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Images/farmer.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>CEO tài ba, chuyên bốc phét</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Images/farmer.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Thiết kế nội dung, nội dung xl là ra đảo</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Images/farmer.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Thằng này làm ra cái web này, có gì cứ hỏi nó</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="./Images/farmer.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Web không đẹp lắm, nhưng thằng này là người vẽ ra cái web này</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">999+</span>
+    <br>Courses sold
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">999+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Products
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #9adbf5" id="work">
+  <h3 class="w3-center">Công việc của chúng tôi</h3>
+  <p class="w3-center w3-large">Những gì chúng tôi đã làm cho mọi người</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="./Images/gay-do.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Từ một thằng xì ke -> 6 múi">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/green.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hãy đề chúng tôi bỏ bớt thịt ra khỏi đĩa ăn của bạn">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/green2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lịch tập và dinh dưỡng đã có chúng tôi lo">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/ngon.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Từ việc bị bồ đá, Loan đã thành công trong công cuộc giảm cân">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./Images/cobap.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Anh mai-cờ từ một thằng suốt ngày bị đấm -> vô địch boxing">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/thanhcongman.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tú từ một người tự ti với bản thân nay đã thanhcong">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/22.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chị Hoa với khóa học boxing - giảm cân kiêm đấm bể mồm người yêu cũ">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./Images/11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Luôn bên bạn nếu bạn cần, không cần thì thôi">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Kĩ năng của chúng tôi</h3>
+      <p>Bề dày kinh nghiệm thiết kế web trên 2 tháng, chúng tôi tự tin dùng khả năng của mình tạo ra một môi trường cho mọi người cùng nhau luyện tập sức khỏe</p>
+      <p>Với sự góp mặt của chuyên gia dinh dưỡng Nguyễn Ngọc Ánh, bạn sẽ thỏa mãn cơn thèm ăn của mình mà không lo tăng cân</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="w3-margin-right"></i>Nutition</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>Diet</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="w3-margin-right"></i>Bodybuilding</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-center" style="padding:128px 16px; background-color: #8a94a6" id="courses">
+  <h3>Khóa học</h3>
+  <p class="w3-large">Lựa chọn khóa học theo nhu cầu của bạn</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-blue w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Cơ bản</li>
+        <li class="w3-padding-16"><b>NO</b> Huấn luyện viên cá nhân</li>
+        <li class="w3-padding-16"><b>YES</b> Tư vấn sức khỏe</li>
+        <li class="w3-padding-16"><b>NO</b> Lên lịch tập</li>
+        <li class="w3-padding-16"><b>YES</b> Hỗ trợ</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">Mỗi tháng</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Đăng kí</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-green w3-hover-shadow">
+      	<li class="w3-black w3-xlarge w3-padding-32">Pro Max</li>
+        <li class="w3-padding-16"><b>YES</b> Huấn luyện viên cá nhân</li>
+        <li class="w3-padding-16"><b>YES</b> Tư vấn sức khỏe</li>
+        <li class="w3-padding-16"><b>NO</b> Lên lịch tập</li>
+        <li class="w3-padding-16"><b>YES</b> Hỗ trợ</li>
+        <li class="w3-padding-16"> Khăn lạnh, nước uống trong quá trình tập</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 30</h2>
+          <span class="w3-opacity">Mỗi tháng</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Đăng kí</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-blue w3-hover-shadow">
+      	<li class="w3-black w3-xlarge w3-padding-32">Cao cấp</li>
+        <li class="w3-padding-16"><b>YES</b> Huấn luyện viên cá nhân</li>
+        <li class="w3-padding-16"><b>YES</b> Tư vấn sức khỏe</li>
+        <li class="w3-padding-16"><b>YES</b> Lên lịch tập</li>
+        <li class="w3-padding-16"><b>YES</b> Hỗ trợ</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 20</h2>
+          <span class="w3-opacity">Mỗi tháng</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">Đăng kí</button> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Liên hệ</h3>
+  <p class="w3-center w3-large">Kết nối và gửi tin nhắn cho chúng tôi:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> VKU, Đà Nẵng</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +84 393 769 194</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: lvlong@vku.udn.vn</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Tên" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Tiêu đề" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Tin nhắn" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black sentbutton" type="submit">
+          <i class="fa fa-paper-plane"></i> Gửi
+        </button>
+      </p>
+    </form>
+    <hr style="color: #105de3">
+    <!-- Image of location/map -->
+    <div class="nearFooter">
+    	<h2 class="w3-wide nearFooterText">Địa chỉ phòng gym</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.7387116137456!2d108.25104871478293!3d15.975015746199267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sKorea%20-%20Vietnam%20Friendship%20Information%20Technology%20College!5e0!3m2!1sen!2s!4v1620872393043!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    	<h2 class="w3-wide nearFooterText"><a href="#" class="linkFooter">Tham gia</a> ngay hôm với chúng tôi</h2>
+    	<img src="./Images/ceb.jpg">
+    </div>
+  </div>
+</div>
+
+<div class="end"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.facebook.com/profile.php?id=100041602174887" title="log" target="_blank" class="w3-hover-text-green">&copy Longpro</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./Images/thanhcongman.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.sentbutton{
+	margin-top: 20px;
+	margin-left: 710px;
+	margin-bottom: 20px;
+}
+
+.nearFooter{
+	columns: 500px 2;
+	column-rule: 5px double #105de3;	
+}
+
+.nearFooter img {
+	margin-left: 100px;
+}
+
+.nearFooterText{
+	text-align: center;
+	border-bottom: 2px solid #151f30;
+}
+
+.linkFooter{
+	text-decoration: none;
+	color: #000;
+	background-color: green;
+	border-radius: 5px;
+}
+
+.linkFooter:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #3a4e70;
+}
+
+.end{
+	height: 20px;
+	background-color: #3a4e70;
+	margin-bottom: 50px;
+}
+
