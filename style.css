@@ -62,3 +62,15 @@ body, html {
 	margin-bottom: 50px;
 }
 
+.border_bot{
+	border-bottom: 2px solid red;
+	margin-left: 20px;
+}
+
+.w3-bar-item:hover{
+	text-decoration: none;
+}
+
+.containerr{
+	
+}

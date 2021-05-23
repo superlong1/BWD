@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <body>
 
 <div class="w3-top">
@@ -18,6 +20,8 @@
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Công việc</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Gói tập</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Liên lạc</a>
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+      <a target="_blank" href="forum.html" class="w3-bar-item w3-button"><i class="fas fa-comments"></i> Thảo luận</a>
     </div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -33,6 +37,8 @@
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Công việc</a>
   <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Gói tập</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Liên lạc</a>
+  <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Đăng nhập</a>
+  <a target="_blank" href="forum.html" onclick="w3_close()" class="w3-bar-item w3-button">Thảo luận</a>
 </nav>
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -51,7 +57,7 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </header>
-
+<hr>
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">Thông tin về công ty</h3>
   
@@ -78,22 +84,62 @@
     </div>
   </div>
 </div>
-
+<hr>
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Phần này dùng để hiển thị slide show</h3>
-      <p>Bạn chán nản khi luyện tập ? Không có động lực lên phòng tập ?</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Lên lịch ngay</a></p>
+      <h3>Trang web cung cấp một lượng lớn thông tin về các khóa học cũng như là lịch tập luyện hay dinh dưỡng</h3>
+      <p>Bạn không biết nên chia lịch tập luyện như thế nào ?<br>Ăn gì mới đúng ?</p>
+      <p><a href="#work" class="w3-button w3-black w3-margin-top"><i class="fa fa-th"> </i> Lên lịch ngay</a></p>
+      <p><a href="#work" class="w3-button w3-black w3-margin-top"><i class="fa fa-th"> </i> Đăng kí thành viên</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
+     <div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="./Images/111.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Jogging with PT
   </div>
 </div>
 
+<div class="w3-display-container mySlides">
+  <img src="./Images/112.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Vegetarian
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="./Images/113.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Bodybuilding
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="./Images/114.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Boxing
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="./Images/115.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Plan for Week
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+  </div>
+</div>
+<hr>
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
+<div class="w3-container" style="padding:128px 16px; background-color: #4c7fb5" id="team">
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">Lãnh đạo của công ty</p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
@@ -143,7 +189,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
@@ -163,27 +209,13 @@
     <br>Products
   </div>
 </div>
-
+<hr>
 <!-- Work Section -->
 <div class="w3-container" style="padding:128px 16px; background-color: #9adbf5" id="work">
   <h3 class="w3-center">Công việc của chúng tôi</h3>
   <p class="w3-center w3-large">Những gì chúng tôi đã làm cho mọi người</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="./Images/gay-do.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Từ một thằng xì ke -> 6 múi">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./Images/green.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hãy đề chúng tôi bỏ bớt thịt ra khỏi đĩa ăn của bạn">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./Images/green2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lịch tập và dinh dưỡng đã có chúng tôi lo">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./Images/ngon.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Từ việc bị bồ đá, Loan đã thành công trong công cuộc giảm cân">
-    </div>
-  </div>
-
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
       <img src="./Images/cobap.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Anh mai-cờ từ một thằng suốt ngày bị đấm -> vô địch boxing">
@@ -192,14 +224,14 @@
       <img src="./Images/thanhcongman.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tú từ một người tự ti với bản thân nay đã thanhcong">
     </div>
     <div class="w3-col l3 m6">
-      <img src="./Images/22.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chị Hoa với khóa học boxing - giảm cân kiêm đấm bể mồm người yêu cũ">
+      <img src="./Images/224.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chị Hoa với khóa học boxing - giảm cân kiêm đấm bể mồm người yêu cũ">
     </div>
     <div class="w3-col l3 m6">
-      <img src="./Images/11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Luôn bên bạn nếu bạn cần, không cần thì thôi">
+      <img src="./Images/gay-do.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bình từ một thằng xì ke lên 6 múi">
     </div>
   </div>
 </div>
-
+<hr>
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -208,14 +240,15 @@
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
-
 <!-- Skills Section -->
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Kĩ năng của chúng tôi</h3>
-      <p>Bề dày kinh nghiệm thiết kế web trên 2 tháng, chúng tôi tự tin dùng khả năng của mình tạo ra một môi trường cho mọi người cùng nhau luyện tập sức khỏe</p>
-      <p>Với sự góp mặt của chuyên gia dinh dưỡng Nguyễn Ngọc Ánh, bạn sẽ thỏa mãn cơn thèm ăn của mình mà không lo tăng cân</p>
+      <h3><span class="border_bot">Kĩ năng</span> của chúng tôi</h3>
+      <p><span style="border-bottom: 2px solid #000">Chuyên gia thể hình</span> Lê Văn Tèo với bề dày kinh nghiệm chuyên môn lên tới 3 tháng đi tập gym</p>
+    <br>
+      <p><span style="border-bottom: 2px solid #000">Với sự góp mặt</span> của chuyên gia dinh dưỡng Nguyễn Ngọc Ánh, bạn sẽ thỏa mãn cơn thèm ăn của mình mà không lo tăng cân</p>
+    <br>
     </div>
     <div class="w3-col m6">
       <p class="w3-wide"><i class="w3-margin-right"></i>Nutition</p>
@@ -233,8 +266,8 @@
     </div>
   </div>
 </div>
-
-<div class="w3-container w3-center" style="padding:128px 16px; background-color: #8a94a6" id="courses">
+<hr>
+<div class="w3-container w3-center" style="padding:128px 16px; background-color: #8a94a6" id="pricing">
   <h3>Khóa học</h3>
   <p class="w3-large">Lựa chọn khóa học theo nhu cầu của bạn</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -288,7 +321,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">Liên hệ</h3>
@@ -319,9 +352,9 @@
     </div>
   </div>
 </div>
-
+<hr>
 <div class="end"></div>
-
+<hr>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -336,32 +369,7 @@
   <p>Powered by <a href="https://www.facebook.com/profile.php?id=100041602174887" title="log" target="_blank" class="w3-hover-text-green">&copy Longpro</a></p>
 </footer>
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
+<script src="JS/myjs.js"></script>
 
 </body>
 </html>
