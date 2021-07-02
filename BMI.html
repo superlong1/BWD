@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<title>WAKENWORK.COM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="JS/files.js" async></script>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">wakenwork</a>
+    <div class="w3-right w3-hide-small">
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Đóng ×</a>
+</nav>
+
+<div id="container">
+        <div id="calculator">
+            <h2>TÍNH TOÁN</h2>
+            <input type="text" name="bmi" id="weight" placeholder="Cân nặng (KG)">
+            <input type="text" name="bmi" id="height" placeholder="Chiều cao (CM)">
+            <input type="submit" value="Tính toán" id="calculate">
+            <div id="yourBMI">Chỉ số BMI của bạn : <span></span></div>
+        </div>
+        <div id="guide">
+            <h2>HƯỚNG DẪN</h2>
+            <ul>
+                <li>Gầy = Chỉ số BMI dưới 18.5</li>
+                <li>Bình thường = chỉ số BMI từ 18.5 đến 24.9</li>
+                <li>Mũm mĩm = chỉ số BMI từ 25 đến 29.9</li>
+                <li>Siêu Mũm mĩm = chỉ số BMI từ 30 trở lên</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <p>
+            Dưới đây là một số lời khuyên và lịch tập trang web đề cử dựa vào chỉ số BMI của bạn.
+        </p>
+    </div>
+    <!--For low BMI-->
+    <hr>
+    <div id="low" style="display: none;">
+        <div>
+            <p>
+                Chỉ số BMI thể hiện rằng bạn khá là gầy. Ngoài việc tập luyện theo lịch dưới đây thì bạn cũng nên bổ sung đầy đủ các chất dinh dưỡng.
+            </p>
+        </div>
+        <hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Ngày</th>
+            <th scope="col">Nhóm cơ</th>
+            <th scope="col">Bài tập</th>
+            <th scope="col">Rep/Set/Thời gian nghỉ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ngày đầu hai</th>
+            <td>Tập ngực và tay sau.</td>
+            <td>
+                <ul>
+                    <li>Đẩy ngực trên với thanh tạ</li>
+                    <li>Dumbbell Fly</li>
+                    <li>Vớt tạ</li>
+                    <li>Close Grip Bench Press</li>
+                    <li>Dumbbell or Ez Triceps Extension</li>
+                    <li>Hít đất (Push-up or Power Band Push-up)</li>
+                </ul>
+            </td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngày thứ ba:</th>
+            <td>Tập lưng và tay trước.</td>
+            <td><ul>
+                <li>Lên xà đơn</li>
+                <li>Ngồi kéo cáp rộng tay</li>
+                <li>Dumbbell Rows</li>
+                <li>Vớt tạ đơn</li>
+                <li>Seated cable rows</li>
+                <li>Barbell Curl</li>
+                <li>Hammer Curl</li>
+            </ul>
+        </td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngày thứ tư:</th>
+            <td>Tập chân và bắp chân.</td>
+            <td><ul>
+                <li>Ngồi đẩy tạ với bắp chân</li>
+                <li>Đẩy bắp chân với máy đạp đùi</li>
+                <li>Kéo bắp chân với dây cao su</li>
+                <li>Đứng thẳng đẩy bắp chân với máy</li>
+                <li>Đẩy bắp chân một bên</li>
+                <li>Nhảy dây</li>
+            </ul></td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngày thứ năm:</th>
+            <td>Tập vai và cầu vai.</td>
+            <td><ul>
+                <li>Barbell Clean & Press - Bài cử tạ đẩy tạ</li>
+                <li>Snatch - Bài tập kéo và đẩy tạ</li>
+                <li>Dumbbell Push Press - Đứng chùng chân đẩy tạ đơn</li>
+                <li>Landmine Press - Đẩy tạ đòn một tay</li>
+                <li>Seated Dumbbell - Bài tập ngồi đẩy vai với tạ đơn</li>
+                <li>Battle Ropes - Đánh dây thừng</li>
+                <li>Barbell Military Press - Ngồi đẩy tạ qua đầu</li>
+            </ul></td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngày thứ sáu:</th>
+            <td>Tập tay trước và tay sau.</td>
+            <td><ul>
+                <li>Cuốn tạ thanh đòn – Cầm bằng vai</li>
+                <li>Cuốn tạ đơn vuông tay</li>
+                <li>Cuốn tạ với Cáp</li>
+                <li>Xà kép</li>
+                <li>Tạ đơn sau đầu</li>
+                <li>Đánh cáp – Cầm thuận tay</li>
+            </ul></td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngày thứ bảy:</th>
+            <td>Tập bắp chân và chân.</td>
+            <td><ul>
+                <li>Donkey Calf Raise</li>
+                <li>Seated Calf Raise</li>
+                <li>Calf Press on Leg Press</li>
+                <li>Standing Calf Raise</li>
+            </ul></td>
+            <td>8-10/3/120s</td>
+          </tr>
+          <tr>
+            <th scope="row">Chủ nhật:</th>
+            <td>Nghỉ.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Một số lưu ý trong quá trình tập luyện
+        <ul>
+            <li>Không tập nhóm cơ 2 ngày liên tiếp</li>
+            <li>Cường độ tập thích hợp</li>
+            <li>Hít thở đúng cách trong lúc tập gym</li>
+        </ul>
+      </p>
+    </div>
+      <!--Good-->
+      <hr>
+    <div id="good" style="display: none;">
+        <div>
+            <p>
+                Bạn có chỉ số BMI khá tốt, nếu bạn là người muôn phát triển cơ bắp nhanh thì hãy chú ý vấn đề thực phẩm và tập luyện điều độ theo bảng chi tiết dưới đây.
+            </p>
+        </div>
+        <hr>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Ngày</th>
+                <th scope="col">Nhóm cơ</th>
+                <th scope="col">Bài tập</th>
+                <th scope="col">Rep/Set/Thời gian nghỉ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ngày đầu hai</th>
+                <td>Tập ngực và tay sau.</td>
+                <td>
+                    <ul>
+                        <li>Đẩy ngực trên với thanh tạ</li>
+                        <li>Dumbbell Fly</li>
+                        <li>Vớt tạ</li>
+                        <li>Close Grip Bench Press</li>
+                        <li>Dumbbell or Ez Triceps Extension</li>
+                        <li>Hít đất (Push-up or Power Band Push-up)</li>
+                    </ul>
+                </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ ba:</th>
+                <td>Tập lưng và tay trước.</td>
+                <td><ul>
+                    <li>Lên xà đơn</li>
+                    <li>Ngồi kéo cáp rộng tay</li>
+                    <li>Dumbbell Rows</li>
+                    <li>Vớt tạ đơn</li>
+                    <li>Seated cable rows</li>
+                    <li>Barbell Curl</li>
+                    <li>Hammer Curl</li>
+                </ul>
+            </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ tư:</th>
+                <td>Tập chân và bắp chân.</td>
+                <td><ul>
+                    <li>Ngồi đẩy tạ với bắp chân</li>
+                    <li>Đẩy bắp chân với máy đạp đùi</li>
+                    <li>Kéo bắp chân với dây cao su</li>
+                    <li>Đứng thẳng đẩy bắp chân với máy</li>
+                    <li>Đẩy bắp chân một bên</li>
+                    <li>Nhảy dây</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ năm:</th>
+                <td>Tập vai và cầu vai.</td>
+                <td><ul>
+                    <li>Barbell Clean & Press - Bài cử tạ đẩy tạ</li>
+                    <li>Snatch - Bài tập kéo và đẩy tạ</li>
+                    <li>Dumbbell Push Press - Đứng chùng chân đẩy tạ đơn</li>
+                    <li>Landmine Press - Đẩy tạ đòn một tay</li>
+                    <li>Seated Dumbbell - Bài tập ngồi đẩy vai với tạ đơn</li>
+                    <li>Battle Ropes - Đánh dây thừng</li>
+                    <li>Barbell Military Press - Ngồi đẩy tạ qua đầu</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ sáu:</th>
+                <td>Tập tay trước và tay sau.</td>
+                <td><ul>
+                    <li>Cuốn tạ thanh đòn – Cầm bằng vai</li>
+                    <li>Cuốn tạ đơn vuông tay</li>
+                    <li>Cuốn tạ với Cáp</li>
+                    <li>Xà kép</li>
+                    <li>Tạ đơn sau đầu</li>
+                    <li>Đánh cáp – Cầm thuận tay</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ bảy:</th>
+                <td>Tập bắp chân và chân.</td>
+                <td><ul>
+                    <li>Donkey Calf Raise</li>
+                    <li>Seated Calf Raise</li>
+                    <li>Calf Press on Leg Press</li>
+                    <li>Standing Calf Raise</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Chủ nhật:</th>
+                <td>Nghỉ.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Một số lưu ý trong quá trình tập luyện
+            <ul>
+                <li>Không tập nhóm cơ 2 ngày liên tiếp</li>
+                <li>Cường độ tập thích hợp</li>
+                <li>Hít thở đúng cách trong lúc tập gym</li>
+            </ul>
+          </p>
+    </div>
+
+      <!--Hight-->
+
+      <hr>
+    <div id="hight" style="display: none;">
+        <div>
+            <p>
+                Bạn có vẻ hơi mũm mĩm, bạn nên hạn chế sử dụng các sản phẩm chứa nhiều đường, tinh bột, tăng cường thêm chất xơ và luyện tập điều độ theo bảng dưới đây.
+            </p>
+        </div>
+        <hr>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Ngày</th>
+                <th scope="col">Nhóm cơ</th>
+                <th scope="col">Bài tập</th>
+                <th scope="col">Rep/Set/Thời gian nghỉ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ngày đầu hai</th>
+                <td>Tập ngực và tay sau.</td>
+                <td>
+                    <ul>
+                        <li>Đẩy ngực trên với thanh tạ</li>
+                        <li>Dumbbell Fly</li>
+                        <li>Vớt tạ</li>
+                        <li>Close Grip Bench Press</li>
+                        <li>Dumbbell or Ez Triceps Extension</li>
+                        <li>Hít đất (Push-up or Power Band Push-up)</li>
+                    </ul>
+                </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ ba:</th>
+                <td>Tập lưng và tay trước.</td>
+                <td><ul>
+                    <li>Lên xà đơn</li>
+                    <li>Ngồi kéo cáp rộng tay</li>
+                    <li>Dumbbell Rows</li>
+                    <li>Vớt tạ đơn</li>
+                    <li>Seated cable rows</li>
+                    <li>Barbell Curl</li>
+                    <li>Hammer Curl</li>
+                </ul>
+            </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ tư:</th>
+                <td>Tập chân và bắp chân.</td>
+                <td><ul>
+                    <li>Ngồi đẩy tạ với bắp chân</li>
+                    <li>Đẩy bắp chân với máy đạp đùi</li>
+                    <li>Kéo bắp chân với dây cao su</li>
+                    <li>Đứng thẳng đẩy bắp chân với máy</li>
+                    <li>Đẩy bắp chân một bên</li>
+                    <li>Nhảy dây</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ năm:</th>
+                <td>Tập vai và cầu vai.</td>
+                <td><ul>
+                    <li>Barbell Clean & Press - Bài cử tạ đẩy tạ</li>
+                    <li>Snatch - Bài tập kéo và đẩy tạ</li>
+                    <li>Dumbbell Push Press - Đứng chùng chân đẩy tạ đơn</li>
+                    <li>Landmine Press - Đẩy tạ đòn một tay</li>
+                    <li>Seated Dumbbell - Bài tập ngồi đẩy vai với tạ đơn</li>
+                    <li>Battle Ropes - Đánh dây thừng</li>
+                    <li>Barbell Military Press - Ngồi đẩy tạ qua đầu</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ sáu:</th>
+                <td>Tập tay trước và tay sau.</td>
+                <td><ul>
+                    <li>Cuốn tạ thanh đòn – Cầm bằng vai</li>
+                    <li>Cuốn tạ đơn vuông tay</li>
+                    <li>Cuốn tạ với Cáp</li>
+                    <li>Xà kép</li>
+                    <li>Tạ đơn sau đầu</li>
+                    <li>Đánh cáp – Cầm thuận tay</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ bảy:</th>
+                <td>Tập bắp chân và chân.</td>
+                <td><ul>
+                    <li>Donkey Calf Raise</li>
+                    <li>Seated Calf Raise</li>
+                    <li>Calf Press on Leg Press</li>
+                    <li>Standing Calf Raise</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Chủ nhật:</th>
+                <td>Nghỉ.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Một số lưu ý trong quá trình tập luyện
+            <ul>
+                <li>Không tập nhóm cơ 2 ngày liên tiếp</li>
+                <li>Cường độ tập thích hợp</li>
+                <li>Hít thở đúng cách trong lúc tập gym</li>
+            </ul>
+          </p>
+    </div>
+
+      <!--Super hight-->
+
+      <hr>
+      <div id="spHight" style="display: none;">
+          <div>
+              <p>
+                Có vẻ bạn hơi 'tròn trịa', đừng vội tập luyện theo chế độ dưới bảng này. Bạn nên dành ra một tuần đề tập các bài tập nhẹ để làm quen với cường độ trước khi tập luyện theo chế độ dưới đây.      
+            </p>
+          </div>
+          <hr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Ngày</th>
+                <th scope="col">Nhóm cơ</th>
+                <th scope="col">Bài tập</th>
+                <th scope="col">Rep/Set/Thời gian nghỉ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ngày đầu hai</th>
+                <td>Tập ngực và tay sau.</td>
+                <td>
+                    <ul>
+                        <li>Đẩy ngực trên với thanh tạ</li>
+                        <li>Dumbbell Fly</li>
+                        <li>Vớt tạ</li>
+                        <li>Close Grip Bench Press</li>
+                        <li>Dumbbell or Ez Triceps Extension</li>
+                        <li>Hít đất (Push-up or Power Band Push-up)</li>
+                    </ul>
+                </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ ba:</th>
+                <td>Tập lưng và tay trước.</td>
+                <td><ul>
+                    <li>Lên xà đơn</li>
+                    <li>Ngồi kéo cáp rộng tay</li>
+                    <li>Dumbbell Rows</li>
+                    <li>Vớt tạ đơn</li>
+                    <li>Seated cable rows</li>
+                    <li>Barbell Curl</li>
+                    <li>Hammer Curl</li>
+                </ul>
+            </td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ tư:</th>
+                <td>Tập chân và bắp chân.</td>
+                <td><ul>
+                    <li>Ngồi đẩy tạ với bắp chân</li>
+                    <li>Đẩy bắp chân với máy đạp đùi</li>
+                    <li>Kéo bắp chân với dây cao su</li>
+                    <li>Đứng thẳng đẩy bắp chân với máy</li>
+                    <li>Đẩy bắp chân một bên</li>
+                    <li>Nhảy dây</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ năm:</th>
+                <td>Tập vai và cầu vai.</td>
+                <td><ul>
+                    <li>Barbell Clean & Press - Bài cử tạ đẩy tạ</li>
+                    <li>Snatch - Bài tập kéo và đẩy tạ</li>
+                    <li>Dumbbell Push Press - Đứng chùng chân đẩy tạ đơn</li>
+                    <li>Landmine Press - Đẩy tạ đòn một tay</li>
+                    <li>Seated Dumbbell - Bài tập ngồi đẩy vai với tạ đơn</li>
+                    <li>Battle Ropes - Đánh dây thừng</li>
+                    <li>Barbell Military Press - Ngồi đẩy tạ qua đầu</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ sáu:</th>
+                <td>Tập tay trước và tay sau.</td>
+                <td><ul>
+                    <li>Cuốn tạ thanh đòn – Cầm bằng vai</li>
+                    <li>Cuốn tạ đơn vuông tay</li>
+                    <li>Cuốn tạ với Cáp</li>
+                    <li>Xà kép</li>
+                    <li>Tạ đơn sau đầu</li>
+                    <li>Đánh cáp – Cầm thuận tay</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Ngày thứ bảy:</th>
+                <td>Tập bắp chân và chân.</td>
+                <td><ul>
+                    <li>Donkey Calf Raise</li>
+                    <li>Seated Calf Raise</li>
+                    <li>Calf Press on Leg Press</li>
+                    <li>Standing Calf Raise</li>
+                </ul></td>
+                <td>8-10/3/120s</td>
+              </tr>
+              <tr>
+                <th scope="row">Chủ nhật:</th>
+                <td>Nghỉ.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Một số lưu ý trong quá trình tập luyện
+            <ul>
+                <li>Không tập nhóm cơ 2 ngày liên tiếp</li>
+                <li>Cường độ tập thích hợp</li>
+                <li>Hít thở đúng cách trong lúc tập gym</li>
+            </ul>
+          </p>
+      </div>
+    <script src="JS/files.js"></script>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <p>Powered by <a href="https://www.facebook.com/profile.php?id=100041602174887" title="log" target="_blank" class="w3-hover-text-green">&copy Longpro</a>
+                <a href="https://www.facebook.com/profileofme"title="log" target="_blank" class="w3-hover-text-green">&copy Anhpro</a></p>
+</footer>
+
+</body>
+</html> 

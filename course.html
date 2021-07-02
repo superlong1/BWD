@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>WAKENWORK.COM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="CSS/course.css" />
+
+<script src="JS/store.js" async></script>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">wakenwork</a>
+    <div class="w3-right w3-hide-small">
+      <a href="" class="w3-bar-item w3-button active"><i class="fa fa-usd"></i> Gói tập</a>
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+      <a target="_blank" href="forum.html" class="w3-bar-item w3-button"><i class="fas fa-comments"></i> Thảo luận</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Đóng ×</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Gói tập</a>
+  <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Đăng nhập</a>
+  <a target="_blank" href="forum.html" onclick="w3_close()" class="w3-bar-item w3-button">Thảo luận</a>
+</nav>
+<!--New here-->
+<header class="main-header" id="home">
+    <nav class="main-nav nav">
+        <ul>
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="store.html">KHÓA TẬP</a></li>
+        </ul>
+    </nav>
+    <h1 class="band-name band-name-large">The Wake-N-Work Store</h1>
+</header>
+<section class="container content-section">
+    <h2 class="section-header">GYM</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Bodybuilding</span>
+            <img class="shop-item-image" src="Images/c1.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$20</span>
+                <button class="btn btn-primary shop-item-button" type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Street Workout tutorial</span>
+            <img class="shop-item-image" src="Images/c.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$16</span>
+                <button class="btn btn-primary shop-item-button"type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">Boxing</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Basic</span>
+            <img class="shop-item-image" src="Images/b1.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$65</span>
+                <button class="btn btn-primary shop-item-button" type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Advanced</span>
+            <img class="shop-item-image" src="Images/b2.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$159</span>
+                <button class="btn btn-primary shop-item-button" type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">VÕ THUẬT</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Kiếm Đạo</span>
+            <img class="shop-item-image" src="Images/v1.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$111</span>
+                <button class="btn btn-primary shop-item-button" type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Karate</span>
+            <img class="shop-item-image" src="Images/v2.png">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$159</span>
+                <button class="btn btn-primary shop-item-button" type="button">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">TỔNG</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">KHÓA HỌC</span>
+        <span class="cart-price cart-header cart-column">GIÁ</span>
+        <span class="cart-quantity cart-header cart-column">SỐ LƯỢNG</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">TỔNG</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">THANH TOÁN</button>
+</section>
+<footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="band-name">The Wake-N-Work</h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i style="font-size: 50px;" class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com" target="_blank">
+                    <i style="font-size: 50px;" class="fab fa-spotify"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i style="font-size: 50px;" class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--New here-->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.facebook.com/profile.php?id=100041602174887" title="log" target="_blank" class="w3-hover-text-green">&copy Longpro</a>
+    <a href="https://www.facebook.com/profileofme"title="log" target="_blank" class="w3-hover-text-green">&copy Anhpro</a></p>
+</footer>
+ 
+<script src="JS/myjs.js"></script>
+
+</body>
+</html>

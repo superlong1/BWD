@@ -7,7 +7,7 @@
 html{
 	font-size: 14px;
 	background-color: rgb(0, 0, 0);
-	color: #FEFEFE
+	color: #fff;
 }
 
 a{
@@ -31,7 +31,7 @@ h1{
 }
 
 .subforum-title{
-	background-color: #292B2E;
+	background-color: #2d3238;
 	padding-top: 5px;
 	border-radius: 5px;
 	margin: 4px;
@@ -50,7 +50,7 @@ h1{
 	padding: 10px; 
 	margin: 4px;
 	border-radius: 5px;
-	background-color: #111314;
+	background-color: #104774;
 }
 
 .center{
@@ -121,11 +121,6 @@ header{
 	margin-right: 10px;
 	column-count: #fff;
 	cursor: pointer;
-}
-
-@font-face{
-	font-size: rintix;
-	src: url(rintix.ttf);
 }
 
 .brand{
@@ -229,8 +224,8 @@ header{
 
 .search-box button {
 	padding: 10px;
-	background-color: #fff;
-	color: #0000;
+	background-color: #0000;
+	color: #ffff;
 }
 
 .search-box button:hover{
