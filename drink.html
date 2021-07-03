@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<title>WAKENWORK.COM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="./CSS/food.css">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0; 
+            margin: 0;
+        }
+        
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth ;
+        }
+        
+        .row {
+            /* margin: 0 -8px; */
+            margin-right: -16px;
+        }
+        
+        .row::after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        
+        .col {
+           padding: 0 8px;
+           float:left;
+        
+        }
+        
+        .col-half {
+            width: 50%;
+        }
+        
+        .mb8 {
+           margin-bottom: 8px; 
+        }
+        
+        .mb16 {
+           margin-bottom: 16px; 
+        }
+        
+        
+        #header {
+            height: 50px;
+            background-color: lightseagreen;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        
+        .text-center {
+            text-align: center;
+            color: #22313F;
+        }
+        
+        #nav > li {
+            display: inline-block;
+            position: relative;
+        
+        }
+        
+        #nav > li > a {
+            text-transform: uppercase;
+        }
+        
+        #nav li a {
+            font-size: 18px;
+            font-weight: lighter;  
+            color: #fff;
+            line-height: 50.5px;
+            padding: 0 28px;
+            text-decoration: none;
+            display: inline-block;
+        
+        }
+        
+        #nav li:hover .subnav {
+            display: block;
+        }
+        
+        #nav .subnav li:hover a,
+        #nav > li:hover > a {
+            background-color: white;
+            color: #000;
+        }
+        
+        #nav .subnav {
+            display: none;
+            position:absolute;
+            list-style: none;;
+            background-color: gray;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+        
+        #nav .subnav a {
+            min-width: 190px;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 0;
+            color: #22313F;
+            text-align: center;
+            margin: 56px 75px 0;
+        }
+        
+        .title-separate {
+            width: 60px;
+            height: 4px;
+            background: #dc2323;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            display: inline-block;
+        }
+        
+        #content {
+            font-size: 18px;
+        }
+        
+        .introduce {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 60px 0 80px;
+        }
+        
+        .introduce .introduce-heading {
+            font-size: 30px;
+        
+        }
+        
+        .text-intro {
+            text-align: justify;
+        }
+        
+        .drink-container {
+            background-color:#f9f9fa;   
+        }
+        
+        .drink-container .drink-img {
+            width: 154px;
+            border-radius: 4px;
+            /* display: block; */
+            width: 100%;
+            padding: 16px 0;
+        }
+        
+        .drink-container img {
+            display: block;
+            width: 100%;
+            border-radius:  10px;
+        }
+        
+        .drink-container .drink-heading {
+            font-size: 20px;
+            margin-top: 8px;
+        }
+        
+        #footer {
+            height: 120px;
+            background-color: #56CCF2;
+        }
+        
+        #footer .socials {
+            text-align: center;
+        }
+        
+        #footer .footer-heading {
+            line-height: 120px;
+            font-size: 40px;
+        }
+        #footer .socials li {
+            line-height: 105px;
+            display: inline-block;
+            list-style: none;
+            padding: 0 24px;
+            color: #fff;
+        }
+        
+        #footer .socials i {
+            display: inline-block;
+        }
+        
+        .event-section {
+            margin: 24px 16px ;
+            background-color: #f0f7fb;
+            padding: 16px;
+            border-radius: 4px;
+            border: black 1px solid;    
+        }
+        
+        .event-heading {
+            font-size: 30px;
+        }
+        
+        .list-event {
+            list-style: none;
+            padding: 16px;
+        }
+        
+        .time-event {
+            margin: 16px 0;
+            border-bottom: 1px dotted #ccc;
+        
+        }
+        
+        .event-item {
+            border-bottom: 1px dotted #ccc;
+            padding: 12px 0 ;
+            background-color: #f0f7fb;
+            min-width: 276px;
+        }
+        
+        span.label {
+            color: #808080; 
+            padding-right: 8px;
+        
+        
+        }
+        
+        
+        .event-item a {
+            color: #004e92;
+            text-decoration: none;
+            border-left: 1px solid #000;
+            padding-left: 8px;
+        
+        }
+        
+        #footer .socials li:hover a {
+            opacity: 0.6;
+        }
+        
+        
+        
+        </style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">wakenwork</a>
+    <div class="w3-right w3-hide-small">
+    <a target="_blank" href="drink.html" class="w3-bar-item w3-button"><i class="fas fa-glass-martini-alt"></i> Drink</a>
+    <a target="_blank" href="food2.html" class="w3-bar-item w3-button"><i class="fas fa-bread-slice"></i> Food</a>
+    <a target="_blank" href="forum.html" class="w3-bar-item w3-button"><i class="fas fa-comments"></i> Thảo luận</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Đóng ×</a>
+  <a target="_blank" href="forum.html" onclick="w3_close()" class="w3-bar-item w3-button">Thảo luận</a>
+</nav>
+
+<div id="header">
+    <ul id="nav">
+        <li><a href="food.html" >Trang Chủ</a></li>
+        <li><a href="#">Tpbs</a>
+            
+            <ul class="subnav">
+                <li><a href="#">Whey Protein</a></li>
+                <li><a href="#">Casein</a></li>
+                <li><a href="#">Creatine</a></li>
+                <li><a href="#">BCAA</a></li>
+                <li><a href="#">Beta-Alanine</a></li>
+            </ul>
+        </li>
+        <li><a href="nutrition.html">Thực PHẩm</a>
+            <ul class="subnav">
+                <li><a href="nutrition.html">Giàu Carb</a></li>
+                <li><a href="nutrition.html">Già Protein</a></li>
+                <li><a href="nutrition.html">Giàu Chất Sơ</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Nước Uống</a>
+            <ul class="subnav">
+                <li><a href="#should-drink">Nên dùng</a></li>
+                <li><a href="#shouldnt-drink">Không nên dùng</a></li>
+            </ul>
+        </li>
+        <li style="float: right;"><a href="contact.html">Liên Hệ</a></li>
+    </ul>
+</div>
+
+
+<div id="content">
+    <div class="introduce">
+        <div class="section-title">
+            Những loại đồ uống chất lượng, <br>
+            Ngon - Bổ - Rẻ
+        </div>
+        <div class="text-center">
+            <div class="title-separate"></div>
+        </div>
+        <p class="text-center mb16">
+            Dưới đây là những loại đồ uống phù hợp cho các bạn muốn giải khát trong phòng tập sau những lần nghỉ ngơi giữa các hiệp
+        </p>
+        <p class="text-intro text-center">
+            Với nền tảng các khóa tập luyện thể hình "WAKE-N-WORK" ưu việt và lực lượng huấn luyện viên Coaching chuyên nghiệp, chúng tôi cung cấp cho người bạn những kiến thức về luyện tập, dinh dưỡng, chế độ hậu cần đảm bảo chất lượng tiện... giúp cho bạn càng hiểu biết về kiến thức thể hình cũng như là các bài tập luyện và dinh dưỡng để giúp cho cuộc sống của chúng ta ngày càng tốt hơn mỗi ngày.
+        </p>    
+        <img src="Images/banner-drink.jpg" alt="" style="width: 100%; margin: 16px 0; border-radius: 10px;">
+    </div>
+
+    <div class="drink-container">
+        <!-- Đồ uống nên dùng -->
+        <div id="should-drink" class="introduce">
+            <h2 class="introduce-heading text-center mb16">ĐỒ UỐNG NÊN DÙNG</h2>
+            <div class="text-center">
+                <div class="title-separate"></div>
+            </div>
+            <div class="row drink-img">
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink1.jpg" alt="" width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Nước Đậu Xanh</h2>
+                        <p class="drink-desc"> Đây là loại nước rất tốt cho sức khỏe giàu hàm lượng chất sơ cũng như là điều hòa độc tố giải độc cơ thể.</p>
+                    </div>
+                </div>
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink2.jpg" alt=""  width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Nước Dừa</h2>
+                        <p class="drink-desc"> Đây là loại nước  cực mát và có nhân dừa rất tốt cho sức khỏe giàu hàm lượng chất sơ cũng như là điều hòa độc tố giải độc cơ thể.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row drink-img">
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink3.jpg" alt="" width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Nước Đậu Đỏ</h2>
+                        <p class="drink-desc"> Đây là loại nước rất tốt cho sức khỏe giàu hàm lượng chất sơ cũng như là điều hòa độc tố giải độc cơ thể.</p>
+                    </div>
+                </div>
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink4.jpg" alt=""  width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> TPBS BCAA</h2>
+                        <p class="drink-desc"> Đây là thực phẩm bổ sung rất tốt cho sức khỏe và làm tăng cơ cho bạn nếu muốn tăng cơ nhanh chống.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row drink-img">
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink5.jpg" alt="" width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Nước Lọc Tinh Khiết</h2>
+                        <p class="drink-desc">Không gì so sánh lại được nước lọc tinh khiến thứ sẽ khiến cơ thể bạn sảng khoái và không bao giờ chán khi uống nó</p>
+                    </div>
+                </div>
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink6.jpg" alt=""  width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Nước Cam </h2>
+                        <p class="drink-desc">Nước cam là một loại chất dinh dưỡng rất tốt cho cơ thể.. nhờ những vitamin và khoáng chất của nó mang lại.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Đồ uống không nên -->
+        <div id="shouldnt-drink" class="introduce">
+            <h2 class="introduce-heading text-center mb16">ĐỒ UỐNG KHÔNG NÊN DÙNG</h2>
+            <div class="text-center">
+                <div class="title-separate"></div>
+            </div>
+            <div class="row drink-img">
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink7.jpg" alt="" width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Bia</h2>
+                        <p class="drink-desc"> Bia là thức uống làm cho bạn bị đầu hơi, cũng như là ức chế thần kinh làm cho khả năng hoạt động bị giảm sút .</p>
+                    </div>
+                </div>
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink8.jpg" alt=""  width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8"> Rượu</h2>
+                        <p class="drink-desc">  Rược là thức uống có nồng độ mạnh, khi sử dụng nhiều rất dễ dẫn đến sự tắc nghẽn của hơi thở và có thể tử vong nếu dùng quá liều</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row drink-img">
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink9.jpg" alt="" width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8">Coffee</h2>
+                        <p class="drink-desc">Coffee là loại đồ uống gây buồn ngủ chứa nhiều chất dopamine, nó làm cho cơ thể mệt mỏi, không thể làm việc hiệu quả</p>
+                    </div>
+                </div>
+                <div class="col col-half text-center">
+                    <img src="Images/drink/drink10.jpg" alt=""  width="350" height="250">
+                    <div class="body-drink">
+                        <h2 class="drink-heading mb8">Nước uống có ga</h2>
+                        <p class="drink-desc"> Đồ uống có ga là thức uống có nồng độ ga nhiều có tác động làm giảm hoạt động trao đổi chất trong cơ thể, </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+    </div>
+    
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64" style="margin-top: 1000px;">
+    <a href="#header" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.facebook.com/profile.php?id=100041602174887" title="log" target="_blank" class="w3-hover-text-green">&copy Longpro</a>
+      <a href="https://www.facebook.com/profileofme"title="log" target="_blank" class="w3-hover-text-green">&copy Anhpro</a></p>
+  </footer>
+
+</body>
+</html>
